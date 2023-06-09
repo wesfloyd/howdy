@@ -1,0 +1,16 @@
+name = "howdy"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "howdy_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "howdy.wasm"
+command = "npm run build:release"
